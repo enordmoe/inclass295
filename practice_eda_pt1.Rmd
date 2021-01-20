@@ -1,0 +1,31 @@
+---
+title: Exploratory Data Analysis Part 1 Practice
+subtitle: Histograms and Frequency Polygons 
+author: Your Name Here
+date: January 28, 2019
+output: 
+  html_document: 
+    fig_height: 4
+    fig_width: 9
+---
+
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(fueleconomy) 
+library(NHANES)
+```
+
+  
+
+**1.** Create a histogram for the `Age` variable from the NHANES (National Health and Nutrition Examination Study ) study. What features do you observe? Try changing the binwidth to see if that affects your conclusions.  
+
+
+**2.** Modify your previous chart so that height now represents the percent in the corresponding interval. Adjust the binwidth so that you can accurately estimate the percent between the ages of 20 and 30.    
+
+
+**3.** Create separate frequency polygons for the variable `BPSysAve` for each category of the variable `BMI_WHO`. All the frequency polygons should appear on the same graph (not faceted). What are your observations? 
+
+
+**4.** In the previous question, did you notice a substantial number of NA values for the `BMI_WHO` variable? Do some digging and characterize who the participants are who were missing data on this variable. What do they have in common? Note: Don't just use `View()` but instead use the data wrangling or graphical tools we have learned. 

@@ -25,10 +25,7 @@ Use data transformations and visual tools where needed to obtain the following:
 1. All years for which Pontiac Vibe data is available. Display the results with the most recent years at the top.  
 
 ```{r}
-vehicles %>% filter(make == "Pontiac", model == "Vibe") %>%
-  select(year, make, model) %>%
-  distinct() %>%
-  arrange(desc(year))
+
 ```
 
 # Question 2  
