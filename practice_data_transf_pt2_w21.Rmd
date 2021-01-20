@@ -25,12 +25,24 @@ Use data transformations and visual tools where needed to obtain the following:
 1. All years for which Pontiac Vibe data is available. Display the results with the most recent years at the top.  
 
 ```{r}
-
+vehicles %>% filter(make == "Pontiac", model == "Vibe") %>%
+  select(year, make, model) %>%
+  distinct() %>%
+  arrange(desc(year))
 ```
 
 # Question 2  
 
-2. For each year in which Hybrid vehicles appear (use `str_detect()`), filter the vehicles with the minimum and maximum city mileage for the corresponding year. Display the values of year, make, model, and city mileage in order from oldest to newest.  
+2. 
+
+a. First, determine the years in which Hybrid vehicles appear (use `filter()` with the `str_detect()` function. To avoid tricky programming at this point in the course, you can manually note which years had Hybrid vehicles for use in part (b)
+
+```{r}
+
+```
+
+
+b. Use `filter()` with `%in%` or use the `between()` function to filter all vehicles produced in these years and then find those with the minimum and maximum city mileage for each of these years. Display the values of year, make, model, and city mileage in order from oldest to newest.  
 
 ```{r}
 
