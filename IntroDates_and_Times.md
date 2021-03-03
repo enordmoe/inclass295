@@ -74,8 +74,8 @@ which will be Thanksgiving:
 
 ### Exercise 1
 
-Follow the steps above to find the date for Thanksgiving next year
-(2020).
+Follow the steps above to find the date for Thanksgiving in the year
+2030.
 
 # 2\. The **lakers** data set
 
